@@ -19,7 +19,7 @@ public class Events implements Listener {
             if (world.getType(X, i, Z) == Material.GRASS) {
                 var loc = e.getPlayer().getLocation();
                 e.getPlayer().getWorld().setType(loc, Material.AIR);
-                e.getPlayer().getWorld().playSound(e.getPlayer().getLocation(), Sound.BLOCK_GRASS_BREAK, 5f, 1);
+                e.getPlayer().getWorld().playSound(e.getPlayer().getLocation(), Sound.BLOCK_GRASS_BREAK, 1f, 1);
                 break;
             }
         }
