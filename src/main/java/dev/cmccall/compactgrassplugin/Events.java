@@ -15,7 +15,7 @@ public class Events implements Listener {
                 }
             }
         }
-        if (e.getPlayer().isFlying()) {
+        if (!e.getPlayer().isOnGround()) {
             return;
         }
         var x = e.getPlayer().getLocation().getX();
