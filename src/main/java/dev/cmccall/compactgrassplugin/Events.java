@@ -15,6 +15,16 @@ public class Events implements Listener {
         int X = (int) x;
         int Y = (int) y;
         int Z = (int) z;
+        if (e.getFrom().getBlockX() == e.getTo().getBlockX()) {
+            if (e.getFrom().getBlockY() == e.getTo().getBlockY()) {
+                if (e.getFrom().getBlockZ() == e.getTo().getBlockZ()) {
+                    return;
+                }
+            }
+        }
+        if (e.getPlayer().isFlying()) {
+            return;
+        }
         for (int i = Y; i > -65; i--) {
             if (world.getType(X, i, Z) == Material.GRASS) {
                 var loc = e.getPlayer().getLocation();
