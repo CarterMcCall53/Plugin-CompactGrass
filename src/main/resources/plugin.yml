@@ -1,0 +1,4 @@
+name: CompactGrassPlugin
+version: '${version}'
+main: dev.cmccall.compactgrassplugin.CompactGrassPlugin
+api-version: 1.18
